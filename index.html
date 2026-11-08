@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Detailing Family IF — Професійний детейлінг та захист авто в Івано-Франківську</title>
+
+   <!-- Шрифти Montserrat -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+   <!-- Файл стилів -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <!-- 1. Шапка сайту (Header) -->
+   <header class="header">
+      <div class="container header__container">
+         <a href="#" class="logo">
+            DETAILING <span>FAMILY IF</span>
+         </a>
+   
+         <nav class="nav">
+            <ul class="nav__list">
+               <li><a href="#services" class="nav__link">Послуги</a></li>
+               <li><a href="#benefits" class="nav__link">Про нас</a></li>
+               <li><a href="#calculator" class="nav__link">Калькулятор</a></li>
+               <li><a href="#gallery" class="nav__link">Результати</a></li>
+               <li><a href="#contacts" class="nav__link">Контакти</a></li>
+            </ul>
+         </nav>
+   
+         <div class="header__contacts">
+            <span class="header__city">м. Івано-Франківськ</span>
+            <a href="tel:+380000000000" class="btn btn--header">Зателефонувати</a>
+         </div>
+      </div>
+   </header>
+   
+   <!-- 2. Головний екран (Hero Section) -->
+   <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__container">
+         <span class="hero__badge">Студія преміального догляду за авто в Івано-Франківську</span>
+   
+         <h1 class="hero__title">
+            Професійний дітейлінг та <span class="text-accent">надійний захист</span> вашого авто
+         </h1>
+   
+         <p class="hero__subtitle">
+            Збережемо ідеальний вигляд салону та захистимо лакофарбове покриття від відколів, подряпин і вигорання.
+            Гарантія на роботи та матеріали.
+         </p>
+   
+         <div class="hero__actions">
+            <a href="#calculator" class="btn btn--primary">Розрахувати вартість</a>
+            <a href="https://wa.me/" target="_blank" class="btn btn--outline">Консультація в WhatsApp</a>
+         </div>
+   
+         <!-- Швидкі переваги -->
+         <div class="hero__features">
+            <div class="feature-item">
+               <div class="feature-item__title">Захисні плівки (PPF)</div>
+               <div class="feature-item__desc">Поліуретан із самовідновленням</div>
+            </div>
+            <div class="feature-item">
+               <div class="feature-item__title">Кераміка 9H</div>
+               <div class="feature-item__desc">Дзеркальний блиск та гідрофоб</div>
+            </div>
+            <div class="feature-item">
+               <div class="feature-item__title">Фото/Відеозвіт</div>
+               <div class="feature-item__desc">Контроль робіт у месенджері</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- 4. Калькулятор вартості (Calculator Section) -->
+   <section class="calculator" id="calculator">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-badge">Розрахунок</span>
+            <h2 class="section-title">Дізнайтеся орієнтовну <span class="text-accent">вартість робіт</span></h2>
+            <p class="section-subtitle">Оберіть тип кузова та необхідні послуги для швидкого розрахунку</p>
+         </div>
+   
+         <div class="calculator__wrapper">
+            <form class="calc-form" id="calcForm">
+               <!-- Крок 1: Клас авто -->
+               <div class="calc-group">
+                  <label class="calc-label">1. Оберіть тип кузова:</label>
+                  <div class="calc-options calc-options--car">
+                     <label class="calc-radio">
+                        <input type="radio" name="carClass" value="1" checked>
+                        <span>Седан / Хетчбек</span>
+                     </label>
+                     <label class="calc-radio">
+                        <input type="radio" name="carClass" value="1.2">
+                        <span>Кросовер / Універсал</span>
+                     </label>
+                     <label class="calc-radio">
+                        <input type="radio" name="carClass" value="1.4">
+                        <span>Позашляховик / Бус</span>
+                     </label>
+                  </div>
+               </div>
+   
+               <!-- Крок 2: Перелік послуг -->
+               <div class="calc-group">
+                  <label class="calc-label">2. Оберіть потрібні послуги:</label>
+                  <div class="calc-checkboxes">
+                     <label class="calc-checkbox">
+                        <input type="checkbox" name="service" value="18000" data-name="Захисна плівка (Фронт)">
+                        <span>Обклеювання плівкою «Зона ризику» (від 18 000 грн)</span>
+                     </label>
+                     <label class="calc-checkbox">
+                        <input type="checkbox" name="service" value="45000" data-name="Повне обклеювання PPF">
+                        <span>Повне обклеювання плівкою PPF (від 45 000 грн)</span>
+                     </label>
+                     <label class="calc-checkbox">
+                        <input type="checkbox" name="service" value="8000" data-name="Відновлювальне полірування">
+                        <span>Відновлювальне полірування кузова (від 8 000 грн)</span>
+                     </label>
+                     <label class="calc-checkbox">
+                        <input type="checkbox" name="service" value="10000" data-name="Керамічне покриття 9H">
+                        <span>Захисне керамічне покриття 9H (від 10 000 грн)</span>
+                     </label>
+                     <label class="calc-checkbox">
+                        <input type="checkbox" name="service" value="6000" data-name="Детейлінг-хімчистка">
+                        <span>Повна дітейлінг-хімчистка салону (від 6 000 грн)</span>
+                     </label>
+                  </div>
+               </div>
+   
+               <!-- Результат -->
+               <div class="calc-result">
+                  <div class="calc-result__title">Орієнтовна вартість:</div>
+                  <div class="calc-result__price" id="totalPrice">0 грн</div>
+                  <p class="calc-result__note">*Точна вартість розраховується після огляду стану ЛФП авто</p>
+                  <a href="https://wa.me/" target="_blank" class="btn btn--primary calc-btn">Записатися на огляд</a>
+               </div>
+            </form>
+         </div>
+      </div>
+   </section>
+
+   <!-- 5. Галерея / Результати (Gallery Section) -->
+   <section class="gallery" id="gallery">
+      <div class="container">
+         <div class="section-header">
+            <span class="section-badge">Портфоліо</span>
+            <h2 class="section-title">Результати нашої <span class="text-accent">роботи</span></h2>
+            <p class="section-subtitle">Подивіться на приклади захисту та перевтілення автомобілів у нашій студії</p>
+         </div>
+   
+         <div class="gallery__grid">
+            <div class="gallery-item">
+               <div class="gallery-item__placeholder">Фото авто 1 (PPF плівка)</div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-item__placeholder">Фото авто 2 (Полірування)</div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-item__placeholder">Фото авто 3 (Кераміка)</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <script src="script.js"></script>
+
+   <!-- 6. Контакти та Футер (Footer) -->
+   <footer class="footer" id="contacts">
+      <div class="container">
+         <div class="footer__grid">
+            <!-- Колонка 1: Про студію -->
+            <div class="footer__col">
+               <a href="#" class="logo footer__logo">
+                  DETAILING <span>FAMILY IF</span>
+               </a>
+               <p class="footer__desc">
+                  Преміальний догляд, захисні поліуретанові плівки та професійне відновлення вашого автомобіля в
+                  Івано-Франківську.
+               </p>
+            </div>
+   
+            <!-- Колонка 2: Контакти -->
+            <div class="footer__col">
+               <h4 class="footer__title">Контакти</h4>
+               <ul class="footer__list">
+                  <li>📍 м. Івано-Франківськ</li>
+                  <li>📞 <a href="tel:+380000000000">+38 (000) 000-00-00</a></li>
+                  <li>💬 <a href="https://wa.me/" target="_blank">Написати у WhatsApp</a></li>
+                  <li>⏰ Пн-Сб: 9:00 – 19:00</li>
+               </ul>
+            </div>
+   
+            <!-- Колонка 3: Навігація -->
+            <div class="footer__col">
+               <h4 class="footer__title">Швидкі посилання</h4>
+               <ul class="footer__list">
+                  <li><a href="#services">Послуги</a></li>
+                  <li><a href="#calculator">Калькулятор</a></li>
+                  <li><a href="#gallery">Результати</a></li>
+               </ul>
+            </div>
+         </div>
+   
+         <div class="footer__bottom">
+            <p>&copy; 2026 DETAILING FAMILY IF. Усі права захищено.</p>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
