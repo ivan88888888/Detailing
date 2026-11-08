@@ -1,8 +1,8 @@
 :root {
-   --primary: #FF4D00;
-   --bg-dark: #111111;
-   --text-light: #F2F2F2;
-   --text-gray: #8E8E8E;
+  --primary: #FF4D00;
+  --bg-dark: #111111;
+  --text-light: #F2F2F2;
+  --text-gray: #8E8E8E;
 }
 
 * {
@@ -13,8 +13,8 @@
 
 body {
    font-family: 'Montserrat', sans-serif;
-   background-color: var(--bg-main);
-   color: var(--text-white);
+   background-color: var(--bg-dark);
+   color: var(--text-light);
    overflow-x: hidden;
 }
 
@@ -42,8 +42,7 @@ body {
 }
 
 .btn--primary {
-   background-color: var(--accent-color);
-   color: #000;
+   background-color: var(--primary);
 }
 
 .btn--primary:hover {
