@@ -1,8 +1,9 @@
 :root {
-  --primary: #FF4D00;
-  --bg-dark: #111111;
-  --text-light: #F2F2F2;
-  --text-gray: #8E8E8E;
+   --bg-main: #0d0e11;
+   --bg-card: #161920;
+   --accent-color: #ffb703;
+   --text-white: #ffffff;
+   --text-gray: #9ba1a6;
 }
 
 * {
@@ -13,8 +14,8 @@
 
 body {
    font-family: 'Montserrat', sans-serif;
-   background-color: var(--bg-dark);
-   color: var(--text-light);
+   background-color: var(--bg-main);
+   color: var(--text-white);
    overflow-x: hidden;
 }
 
@@ -42,7 +43,8 @@ body {
 }
 
 .btn--primary {
-   background-color: var(--primary);
+   background-color: var(--accent-color);
+   color: #000;
 }
 
 .btn--primary:hover {
